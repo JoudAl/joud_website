@@ -461,3 +461,38 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+/************************** Style for mina_sidor page *******************************/
+
+#banking-text h3 {
+    font-size: 90%
+}
+
+#banking-text {
+    width: 30%;
+}
+
+.myside {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 2em 0 0;
+}
+
+#banking-text a {
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(252, 252, 252);
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 1em;
+    border-radius: 5px;
+    font-style: italic;
+    background-color: #ff465e;
+}
+
+#banking-text a:hover {
+    color: #ff465e;
+    background-color: whitesmoke;    
+}
