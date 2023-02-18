@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-:root{
+
+:root {
     --white: #f9f9f9;
     --black: #36383F;
     --gray: #85888C;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,13 +28,10 @@ a {
 /* Style the top navigation bar */
 .header {
     background-color: rgb(255, 57, 100);
-    box-shadow: 1px 1px 5px 0px var(rgb(255, 57, 100));
     position: sticky;
-    top: 0;
-    width: 100%;
 }
 
-.logo{
+.logo {
     display: inline-block;
     margin-left: 10px;
 }
@@ -45,7 +44,7 @@ a {
 }
 
 /* Nav menu */
-.nav{
+.nav {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -53,32 +52,36 @@ a {
     overflow: hidden;
 
 }
+
 .menu {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.menu a{
+.menu a {
     display: block;
     padding: 30px;
     color: var(--white);
 }
+
 /* .menu a:hover{
     background-color: var(--white);
     color: #ff465e;
 } */
-.nav{
+.nav {
     display: flex;
     max-height: 0;
     transition: max-height .5s ease-out;
 }
 
-.hamb{
+.hamb {
     cursor: pointer;
     float: right;
     padding: 30px 20px;
-}/* Style label tag */
+}
+
+/* Style label tag */
 
 .hamb-line {
     background: var(--white);
@@ -87,10 +90,12 @@ a {
     position: relative;
     width: 24px;
 
-} /* Style span tag */
+}
+
+/* Style span tag */
 
 .hamb-line::before,
-.hamb-line::after{
+.hamb-line::after {
     background: var(--white);
     content: '';
     display: block;
@@ -99,10 +104,12 @@ a {
     transition: all .2s ease-out;
     width: 100%;
 }
-.hamb-line::before{
+
+.hamb-line::before {
     top: 5px;
 }
-.hamb-line::after{
+
+.hamb-line::after {
     top: -5px;
 }
 
@@ -111,19 +118,22 @@ a {
 }
 
 /* Toggle menu icon */
-.side-menu:checked ~ nav{
+.side-menu:checked~nav {
     max-height: 100%;
 }
-.side-menu:checked ~ .hamb .hamb-line {
+
+.side-menu:checked~.hamb .hamb-line {
     background: transparent;
 }
-.side-menu:checked ~ .hamb .hamb-line::before {
+
+.side-menu:checked~.hamb .hamb-line::before {
     transform: rotate(-45deg);
-    top:0;
+    top: 0;
 }
-.side-menu:checked ~ .hamb .hamb-line::after {
+
+.side-menu:checked~.hamb .hamb-line::after {
     transform: rotate(45deg);
-    top:0;
+    top: 0;
 }
 
 
@@ -152,7 +162,7 @@ a {
 .Homebackgrund {
     color: #f2f2f2;
     font-size: 20px;
-    padding: 2em 1em 2em 2em; 
+    padding: 2em 1em 2em 2em;
     width: 100%;
 }
 
@@ -167,7 +177,7 @@ a {
     margin-top: 1em;
     border-radius: 5px;
     font-style: italic;
-    
+
 }
 
 .Homebackgrund a:hover {
@@ -195,7 +205,7 @@ a {
 
 .hometext {
     font-size: 20px;
-    width:100%;
+    width: 100%;
     padding: 0 2em 10em 2em;
 }
 
@@ -206,7 +216,8 @@ a {
     .header {
         display: flex;
     }
-    .nav{
+
+    .nav {
         display: flex;
         max-height: none;
         top: 0;
@@ -215,29 +226,33 @@ a {
         width: fit-content;
         background-color: transparent;
     }
-    .menu li{
+
+    .menu li {
         float: left;
     }
 
-    .hamb{
+    .hamb {
         display: none;
     }
+
     .menu {
         flex-direction: row;
     }
+
     .right-menu {
         padding-left: 23em;
     }
+
     /* Change color on hover */
 
     .main-content {
         background-color: #ff465e;
         display: flex;
         flex-direction: row;
-        justify-content: stretch;  
-        padding: 40px 0 40px 0;  
+        justify-content: stretch;
+        padding: 40px 0 40px 0;
     }
-    
+
     .Homebackgrund a {
         text-decoration: none;
         float: left;
@@ -250,12 +265,14 @@ a {
         border-radius: 5px;
         font-style: italic;
     }
+
     .Homebackgrund {
         color: #f2f2f2;
         font-size: 20px;
-        padding: 5em 0em 5em 5em; 
+        padding: 5em 0em 5em 5em;
         width: 60%;
     }
+
     .Homeimg {
         padding: 0;
     }
@@ -265,12 +282,12 @@ a {
         flex-direction: row;
         justify-content: space-around;
     }
-    
+
     .hometext {
         width: 50%;
         padding: 3em 0 5em 0;
     }
-    
+
 }
 
 /************************** Style for OM_OSS page *******************************/
@@ -317,142 +334,149 @@ a {
 }
 
 /************************** Style for abonnemang page *******************************/
-.låda{
-    float: center;
+.abonnemang-content {
+    padding: 5em 3em 0 3em;
+}
+
+.låda {
     width: 110%;
-  align-content: stretch;
+    align-content: stretch;
 
 }
-.låda a{
+
+.låda a {
     color: black;
     text-decoration: none;
-    border: 2px solid  #23973c;
+    border: 2px solid #23973c;
     display: inline-block;
-  text-decoration: none;
- 
-  padding: 13px 33px;
-  font-size: 15px;
-  background: transparent;
-  position: relative;
-  cursor: pointer;
+    text-decoration: none;
+
+    padding: 13px 33px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
 
 }
 
 
-    /*abonnemang*/
+/*abonnemang*/
 .square {
-    float: left; 
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-color: rgb(37, 175, 25);
-  text-align:  center;
-  
- 
- 
-  display: table;
-  width: 20%;
-  border-collapse: separate;
-  border-spacing: 15px 50px;
- 
- 
-  
- 
-  }
-       
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(37, 175, 25);
+    text-align: center;
+
+
+
+    display: table;
+    width: 20%;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+
+
+
+
+}
+
 .squaree {
-    float: left; 
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-color: rgb(37, 175, 25);
-  text-align:  center;
-  display: table;
-  width: 20%;
-  border-collapse: separate;
-  border-spacing: 15px 50px;
- 
- 
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(37, 175, 25);
+    text-align: center;
+    display: table;
+    width: 20%;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+
+
 }
+
 .squareee {
-    float:left; 
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-color: rgb(37, 175, 25);
-  text-align:  center;
-  
- 
- 
-  display: table;
-  width: 20%;
-  border-collapse: separate;
-  border-spacing: 15px 50px;
- 
- 
-}  
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(37, 175, 25);
+    text-align: center;
+
+
+
+    display: table;
+    width: 20%;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+
+
+}
+
 .squareeee {
-    float:left; 
-  height: 300px;
-  width: 300px;
-  background-color: rgb(255, 255, 255);
-  border-style: solid;
-  border-color: rgb(37, 175, 25);
-  text-align:  center;
-  
- 
- 
-  display: table;
-  width: 20%;
-  border-collapse: separate;
-  border-spacing: 15px 50px;
- 
- 
-} 
-.square div p{
-    font-size: 30px;
-    color: #23973c;
-    text-align:  center;
-    
-    
-   font-weight: bold;
-   margin:10px
-   
-   
-  
+    float: left;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(37, 175, 25);
+    text-align: center;
+
+
+
+    display: table;
+    width: 20%;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+
+
 }
-.squaree div p{
+
+.square div p {
     font-size: 30px;
     color: #23973c;
-    text-align:  center;
-    
-    
-   font-weight: bold;
-   margin:10px;
-  
+    text-align: center;
+
+
+    font-weight: bold;
+    margin: 10px
 }
-.squareee div p{
+
+.squaree div p {
     font-size: 30px;
     color: #23973c;
-    text-align:  center;
-    
-    
-   font-weight: bold;
-   margin:10px;
-  
+    text-align: center;
+
+
+    font-weight: bold;
+    margin: 10px;
+
 }
-.squareeee div p{
+
+.squareee div p {
     font-size: 30px;
     color: #23973c;
-    text-align:  center;
-    
-    
-   font-weight: bold;
-   margin:10px;
-  
+    text-align: center;
+
+
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.squareeee div p {
+    font-size: 30px;
+    color: #23973c;
+    text-align: center;
+
+
+    font-weight: bold;
+    margin: 10px;
+
 }
 
 /************************** Style for sök page *******************************/
@@ -495,11 +519,11 @@ a {
 
 #banking-text a:hover {
     color: #ff465e;
-    background-color: whitesmoke;    
+    background-color: whitesmoke;
 }
 
 /************************** Style for help page *******************************/
-#help-text{
+#help-text {
     display: flex;
     justify-content: center;
     margin-top: 20em;
@@ -509,6 +533,7 @@ a {
 .minasidor-inloggning {
     background-image: url(images/inloggningp.png);
 }
+
 .inloggning-content {
     display: flex;
     flex-direction: column;
@@ -523,6 +548,7 @@ td,
 th {
     border: 1px solid;
 }
+
 table {
     width: 30em;
 }
