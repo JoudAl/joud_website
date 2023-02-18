@@ -496,3 +496,10 @@ a {
     color: #ff465e;
     background-color: whitesmoke;    
 }
+
+/************************** Style for help page *******************************/
+#help-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 20em;
+}
