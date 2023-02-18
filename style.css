@@ -270,6 +270,7 @@ a {
         width: 50%;
         padding: 3em 0 5em 0;
     }
+    
 }
 
 /************************** Style for OM_OSS page *******************************/
@@ -502,4 +503,33 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 20em;
+}
+
+/************************** Style for inloggning page *******************************/
+.minasidor-inloggning {
+    background-image: url(images/inloggningp.png);
+}
+.inloggning-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+/************************** Style for välja page *******************************/
+table,
+td,
+th {
+    border: 1px solid;
+}
+table {
+    width: 30em;
+}
+
+.main-table-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
 }
