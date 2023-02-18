@@ -453,3 +453,11 @@ a {
    margin:10px;
   
 }
+
+/************************** Style for abonnemang page *******************************/
+.search {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
