@@ -29,6 +29,7 @@ a {
 .header {
     background-color: rgb(255, 57, 100);
     position: sticky;
+     z-index:100000;
 }
 
 .logo {
